@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Additional Exercises</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./css/style.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="./css/print.css" media="print" type="text/css"> 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <style>
+      .tag { font-weight: bold; color:blue;}
+      code {
+        color: teal;
+        font-weight: bold;
+      }
+      figure {
+        max-width: 800px;
+        padding-left: 5px;
+        border: 3px solid;
+        border-image-source: linear-gradient(70deg, lightblue, white, white, white);
+        border-image-slice: 1;
+      }
+      pre { display: block; margin: 0;} 
+      .show { visibility:hidden; color: red;}
+      .showq { visibility:hidden; color: red;}
+    </style>
+  </head>
+
+  <body>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1 id="worksheet-4">Worksheet 8</h1>
+          <h4 id="syst10049-web-development">SYST10049 Web Development</h4>
+
+          <h2 id="complete-the-following-excercises">Complete the following excercises</h2><hr>
+
+          <ol>
+            <li>Prepare the following internal (embedded) CSS styling for figure 1 below:
+              <ul>
+                <li>Change the color of all &lt;p&gt; elements to "green".</li>
+                <li>Change the font weight of all elements with class "hdr" to "normal".</li>
+                <li>Change the background color of all elements with class "backcolor" to "pink".</li>
+                <li>Change the font style of all &lt;section&gt; and &lt;article&gt; elements to "italic". Prepare the stylings in one style rule.</li>
+              </yl>
+            </li>  
+          </ol>
+          <figure>
+            <pre class="language-html" style="margin: 0; height: 160px;"><code>
+&lt;h1 class=&quot;hdr&quot;&gt;This is worksheet exercise 1&lt;/h1&gt;
+&lt;h2 class=&quot;hdr&quot;&gt;This is h2&lt;/h2&gt;
+&lt;main class=&quot;backcolor&quot;&gt;This is main&lt;/main&gt;
+&lt;section&gt;This is section
+  &lt;p&gt;This is paragraph 1&lt;/p&gt;
+&lt;/section&gt;
+&lt;article&gt;This is article&lt;/article&gt;
+&lt;p&gt;This is paragraph 2&lt;/p&gt;
+            </code></pre><hr>
+            <iframe style="width: 100%; height: 280px; border: 1px dotted blue;" srcdoc=
+            "&lt;style&gt;
+              p { color: green; }
+              .hdr { font-weight: normal; } 
+              .backcolor { background-color: pink; }
+              section, article { font-style: italic; }
+            &lt;/style&gt;
+            &lt;style&gt;h4, ul, address { background-color: lightpink; }&lt;/style&gt;
+            &lt;h1 class=&quot;hdr&quot;&gt;This is worksheet exercise 1&lt;/h1&gt;
+            &lt;h2 class=&quot;hdr&quot;&gt;This is h2&lt;/h2&gt;
+            &lt;main class=&quot;backcolor&quot;&gt;This is main&lt;/main&gt;
+            &lt;section&gt;This is section
+              &lt;p&gt;This is paragraph 1&lt;/p&gt;
+            &lt;/section&gt;
+            &lt;article&gt;This is article&lt;/article&gt;
+            &lt;p&gt;This is paragraph 2&lt;/p&gt;">
+            </iframe>
+            <figcaption>Figure 1.</figcaption>
+            </figure>
+            <hr>
+            <figure class="showq" id="q1" style="margin-top: -10px; margin-bottom: 0;">
+              <pre class="language-html" style="margin: -10px; height: 0px;"><code>
+&lt;style&gt;
+  p { color: green; }
+  .hdr { font-weight: normal; } 
+  .backcolor { background-color: pink; }
+  section, article { font-style: italic; }
+&lt;/style&gt;
+            </code></pre></figure>
+            <button id="b1" onclick="showq(0)";>Show answer</button><hr>
+
+            <ol start="2">
+              <li>Prepare the following internal (embedded) CSS styling for figure 2 below:
+                <ul>
+                  <li>Change the background color of all &lt;main&gt; elements to "red".</li>
+                  <li>Change the background color of all &lt;main&gt; elements with id "main1" to "yellow".</li>
+                  <li>Change the color of all &lt;p&gt; elements to "green".</li>
+                  <li>Underline all &lt;p&gt; elements with class "green" and change the font style to "normal".</li>
+                  <li>Change the border of all &lt;p&gt; elements with class "green" and id "p1" to solid 1px and "red".</li>
+                  <li>Change the font style of all &lt;section&gt; elements to "italic".</li>
+                </ul>
+              </li>  
+            </ol>
+            <figure>
+              <pre class="language-html" style="margin: 0; height: 200px;"><code>
+&lt;h1&gt;This is worksheet exercise 2&lt;/h1&gt;
+&lt;main id="main1"&gt;This is main 1&lt;/main&gt;
+&lt;section&gt;This is section 
+  &lt;article&gt;This is article&lt;/article&gt;
+  &lt;p class="green"&gt;This is paragraph 1&lt;/p&gt;
+  &lt;p id="p1" class="green"&gt;This is paragraph 2&lt;/p&gt;
+  &lt;p&gt;This is paragraph 3&lt;/p&gt;
+&lt;/section&gt;
+&lt;p&gt;This is paragraph 4&lt;/p&gt;
+&lt;main&gt;This is main 2&lt;/main&gt;
+              </code></pre><hr>
+              <iframe style="width: 100%; height: 340px; border: 1px dotted blue;" srcdoc=
+              "&lt;style&gt;
+              main { background-color: red; }
+              main#main1 { background-color: yellow; }
+              p { color: green; }
+              p.green { text-decoration: underline; font-style: normal; }
+              p.green#p1 { border: solid 1px red; }
+              section { font-style: italic; }
+              &lt;/style&gt;
+              &lt;h1&gt;This is worksheet exercise 2&lt;/h1&gt;
+              &lt;main id=&quot;main1&quot;&gt;This is main 1&lt;/main&gt;
+              &lt;section&gt;This is section 
+                &lt;article&gt;This is article&lt;/article&gt;
+                &lt;p class=&quot;green&quot;&gt;This is paragraph 1&lt;/p&gt;
+                &lt;p id=&quot;p1&quot; class=&quot;green&quot;&gt;This is paragraph 2&lt;/p&gt;
+                &lt;p&gt;This is paragraph 3&lt;/p&gt;
+              &lt;/section&gt;
+              &lt;p&gt;This is paragraph 4&lt;/p&gt;
+              &lt;main&gt;This is main 2&lt;/main&gt;">
+              </iframe>
+              <figcaption>Figure 2.</figcaption>
+              </figure><hr>
+              <figure class="showq" id="q2" style="display: block; margin-top: -10px; margin-bottom: 0;">
+                <pre class="language-html" style="margin: -10px; height: 0px;"><code>
+&lt;style&gt;
+  main { background-color: red; }
+  main#main1 { background-color: yellow; }
+  p { color: green; }
+  p.green { text-decoration: underline; font-style: normal; }
+  p.green#p1 { border: solid 1px red; }
+  section { font-style: italic; }
+&lt;/style&gt;
+              </code></pre></figure>
+              <button id="b2" onclick="showq(1);">Show answer</button><hr>
+              <ol start="3">
+                <li>Prepare the following internal (embedded) CSS styling for figure 3 below:
+                  <ul>
+                    <li>Change the text to uppercase, color to "red", and font weight to bold for all &lt;article&gt; that are general siblings of &lt;p&gt; with class "green" that are descendant of &lt;section&gt;.</li>
+                    <li>Change the background color to "yellow" for all &lt;aside&gt; that are adjacent siblings of &lt;p&gt; with id "p1" that are descendant of &lt;section&gt;.</li>
+                    
+                  </ul>
+                </li>  
+              </ol>
+              <figure>
+                <pre class="language-html" style="margin: 0; height: 230px;"><code>
+&lt;h1&gt;This is worksheet exercise 3&lt;/h1&gt;
+&lt;main id="main1"&gt;This is main 1&lt;/main&gt;
+&lt;section&gt;This is section 
+  &lt;p class="green"&gt;This is paragraph 1&lt;/p&gt;
+  &lt;p class="green"&gt;This is paragraph 2&lt;/p&gt;
+  &lt;p class="green" id="p1"&gt;This is paragraph 3&lt;/p&gt;
+  &lt;aside&gt;This is aside&lt;/aside&gt;
+  &lt;article&gt;This is article&lt;/article&gt;
+&lt;/section&gt;
+&lt;p&gt;This is paragraph 4&lt;/p&gt;
+&lt;main&gt;This is main 2&lt;/main&gt;
+                </code></pre><hr>
+                <iframe style="width: 100%; height: 360px; border: 1px dotted blue;" srcdoc=
+                "&lt;style&gt;
+                section p.green ~ article { text-transform: uppercase; color: red; font-weight: bold;}
+                section p#p1 + aside { background-color: yellow; }
+              &lt;/style&gt;
+              &lt;h1&gt;This is worksheet exercise 3&lt;/h1&gt;
+              &lt;main id=&quot;main1&quot;&gt;This is main 1&lt;/main&gt;
+              &lt;section&gt;This is section 
+                &lt;p class=&quot;green&quot;&gt;This is paragraph 1&lt;/p&gt;
+                &lt;p class=&quot;green&quot;&gt;This is paragraph 2&lt;/p&gt;
+                &lt;p class=&quot;green&quot; id=&quot;p1&quot;&gt;This is paragraph 3&lt;/p&gt;
+                &lt;aside&gt;This is aside&lt;/aside&gt;
+                &lt;article&gt;This is article&lt;/article&gt;
+              &lt;/section&gt;
+              &lt;p&gt;This is paragraph 4&lt;/p&gt;
+              &lt;main&gt;This is main 2&lt;/main&gt;">
+              </iframe>
+              <figcaption>Figure 3.</figcaption>
+              </figure>  
+            <hr>
+            <figure class="showq" id="q3" style="display: block; margin-top: -10px; margin-bottom: 0;">
+              <pre class="language-html" style="margin: -10px; height: 0px;"><code>
+&lt;style&gt;
+  section p.green ~ article { text-transform: uppercase; color: red; font-weight: bold;}
+  section p#p1 + aside { background-color: yellow; }
+&lt;/style&gt;
+            </code></pre></figure>
+            <button id="b3" onclick="showq(2);">Show answer</button><hr>
+
+            <ol start="4">
+              <li>Calculate the specificity of the selectors in figure 4.<br>
+                Each element or psuedo-element gets 1 point.<br>
+                Each attribute, class, or pseudo-class gets 10 points.<br>
+                Each ID gets 100 points.<br>
+                The universal selector (*) get 0 point.<br>
+              </li>  
+            </ol>
+            <figure>
+              <pre class="language-html" style="margin: 0; height: 290px;"><code>
+                <span style="font-size:xx-small;">&bull;</span>  p                          <span class="show" >1</span>
+                <span style="font-size:xx-small;">&bull;</span>  #first                     <span class="show" >100</span>
+                <span style="font-size:xx-small;">&bull;</span>  .blueclass                 <span class="show" >10</span>
+                <span style="font-size:xx-small;">&bull;</span>  p#first                    <span class="show" >101</span>
+                <span style="font-size:xx-small;">&bull;</span>  p#first.blueclass          <span class="show" >111</span>
+                <span style="font-size:xx-small;">&bull;</span>  #first ol                  <span class="show" >101</span>
+                <span style="font-size:xx-small;">&bull;</span>  main #last                 <span class="show" >101</span>
+                <span style="font-size:xx-small;">&bull;</span>  main.small #last.big       <span class="show" >121</span>
+                <span style="font-size:xx-small;">&bull;</span>  main p.small footer.big    <span class="show" >23</span>
+                <span style="font-size:xx-small;">&bull;</span>  li.small.big#last          <span class="show" >121</span>
+
+                <button id="showSpec" onclick="showSpec()">Press to display answers</button>
+            </code></pre><hr>
+            <figcaption>Figure 4.</figcaption>
+            </figure>
+
+          <blockquote>
+            <p>Web Development @ Sheridan College</p>
+          </blockquote>
+<script>
+    var shown=false; 
+    var showqu=[false, false, false];
+    var showmargin=[200, 200, 180];
+
+  function showq(y) {
+      var x=y+1;
+      if (showqu[y]) {
+        showqu[y] = false;
+        $("#q"+x).children().css({"visibility":"hidden","height":"0px"});
+        $("#b"+x).text("Show answer"); 
+       }
+      else { 
+        $("#q"+x).children().css({"visibility":"visible","height":showmargin[y]+"px"});
+        $("#b"+x).html("Hide answer");
+        showqu[y] = true;
+      } 
+    }
+
+    function showSpec() {
+      if (shown) {
+        var y = 'hidden';
+        shown = false;
+        document.getElementById("showSpec").innerHTML="Press to display answers"; }
+      else { 
+        var y = 'visible';
+        document.getElementById("showSpec").innerHTML="Hide answers";
+        shown = true;
+      }
+      var x = document.getElementsByClassName('show');
+      for (var i=0; i<x.length; i++) {
+        x[i].style.visibility = y;
+      }
+    }
+
+</script>
+
+</body>
+</html>
