@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<!-- Program: formdemo.html -->
+<!-- Author: Andy Pak, Sheridan College -->
+<!-- Date: Nov, 2020 -->
+<html lang="en">
+	<head>
+		<title>Form Demo</title>
+		<meta charset="utf-8" />
+		<style>
+			body { background-color: rgb(241, 241, 195);}
+			#f1 {
+				float: left;
+				width: 50%;
+				font-size: 1.2em;
+				margin-left: 1em;
+			}
+			#f2, #textarea {
+				float: right; 
+				width: 45%;
+				font-size: 1.2em;
+				margin-right: 1em;
+			}
+			#f3 {
+				float: right; 
+				width: 45%;
+				font-size: 1.2em;
+				clear: right;
+				margin-right: 1em;
+			} 
+			p { margin: 0.4em 0; }
+		</style>
+	</head>
+	<body>
+	<h3 style="text-align: center;">Form Demo</h3>
+		
+	<form id="f1" name="form1" method="get" action="noexist.php">
+		<fieldset> 
+			<legend>Form 1:</legend>
+			Name (text): <input type="text" name="uname" required>
+			<p>Password (password): <input type="password" name="pass" required autofocus></p>
+			<fieldset>
+				<legend>Checkboxes</legend>
+				<p>Fishing:<input type="checkbox" name="habit1"></p>
+				<p>Reading:<input type="checkbox" name="habit2"></p>
+				<p>Singing:<input type="checkbox" name="habit3"></p>
+			</fieldset>
+			<fieldset>
+				<legend>Radio Buttons</legend>
+				<p>Take Bus:<input type="radio" name="it"></p>
+				<p>Take Plane:<input type="radio" name="it"></p>
+				<p>Walk:<input type="radio" name="it"></p>
+			</fieldset>
+			
+			<p>Range (range): <input type="range" name="slide"></p>
+			<p>Email (email): <input type="email" name="email"></p>
+			<p>url (url): <input type="url"></p>
+			<p>Submit (submit): <input type="submit"></p>
+			<p>Button (button): <button type="button">Click Me!</button></p>
+			<p>Reset (reset): <input type="reset" value="Start over">
+		</fieldset>
+	</form>
+	
+	<form id="f2">
+		<fieldset>
+			<legend>Form 2:</legend>
+			<p>Province: <select name="prov">
+				<option value="AB">AB</option>
+				<option value="BC">BC</option>
+				<option value="ON">ON</option>
+				<option value="NB">NB</option>
+				<option value="NF">NF</option>
+				<option value="Others">**</option>
+				</select></p>
+			<input type="submit"><br>
+		</fieldset><br>
+	</form><br>
+
+	</body>
+</html>
